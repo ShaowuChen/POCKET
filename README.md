@@ -1,12 +1,34 @@
-# P-ROCKET
-Hello, there
-Welcome to the repo for the paper xxx
+# P-ROCKET: Pruning Random Convolution Kernels for Time Series Classification
 
-8/9/2023
-Preparing code. ~~Plan to submit by tomorrow (September 9, 2023).~~
+Hello there, welcome to our Repo! 
+Feel free to contact me (shaowu-chen@foxmail.com) if you have questions about the paper. 
 
----
-9/9/2023
-Have submitted the code for ROCKET-PPV-MAX to the branch. (Waitting for double-check and merger.)
-Plan to submit the code for ROCKET-PPV and MiniROCKET by tomorrow (September 10, 2023), agian.  (Today is saturday!)  
+
+The implementaion is based on [ROCKET](https://github.com/angus924/rocket) and [S-ROCKET](https://github.com/salehinejad/srocket)
+Many thanks to Angus Dempster and Hojjat Salehinejad for their kindly help.
+
+
+# 1. Environment:
+python3.6.12 ; Sklearn 0.24.2.
+
+# 2. Description for files:
+
+```
+  ├── ROCKET-PPV-MAX: contains code for ROCKET-PPV-MAX
+  ├── ROCKET-PPV: contains code for ROCKET-PPV
+  ├── MiniROCKET: contains code for MiniROCKET
+  ├── demo.txt: write down the name of datasets for imeplementation here.
+```
+
+# 3. Dataset:
+Find and download UCR 2018 on [UCR2018](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/)
+
+# 4. Demo/How to run:
+- download and save the dataset archieve on the root path
+- run the follow command
+
+```bash
+cd ./ROCKET-PPV-MAX 
+python reproduce_experiments_ucr.py -o save_path -n 10 -e 50 
+```
 
