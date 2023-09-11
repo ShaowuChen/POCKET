@@ -17,7 +17,11 @@ python3.6.12 ; Sklearn 0.24.2.
 
 ```
   ├── ROCKET-PPV-MAX: contains code for ROCKET-PPV-MAX
-  ├────test
+      ├── reproduce_experiments_ucr.py: Main code 
+      ├── ADMM_pruner.py              : Our ADMM-based algorithm
+      ├── PROCKET_pruner.py           : Our P-ROCKET algorithm
+      ├── rocket_functions.py         : Generate kernels
+      ├── utils.py                    : Process results
   ├── ROCKET-PPV: contains code for ROCKET-PPV
   ├── MiniROCKET: contains code for MiniROCKET
   ├── demo.txt: write down the name of datasets for imeplementation here
