@@ -1,10 +1,12 @@
 # P-ROCKET: Pruning Random Convolution Kernels for Time Series Classification
 
 Hello there, welcome to our Repo! 
+
 Feel free to contact me (shaowu-chen@foxmail.com) if you have questions about the paper. 
 
 
 The implementaion is based on [ROCKET](https://github.com/angus924/rocket) and [S-ROCKET](https://github.com/salehinejad/srocket)
+
 Many thanks to Angus Dempster and Hojjat Salehinejad for their kindly help.
 
 
@@ -15,9 +17,10 @@ python3.6.12 ; Sklearn 0.24.2.
 
 ```
   ├── ROCKET-PPV-MAX: contains code for ROCKET-PPV-MAX
+  ├────test
   ├── ROCKET-PPV: contains code for ROCKET-PPV
   ├── MiniROCKET: contains code for MiniROCKET
-  ├── demo.txt: write down the name of datasets for imeplementation here.
+  ├── demo.txt: write down the name of datasets for imeplementation here
 ```
 
 # 3. Dataset:
