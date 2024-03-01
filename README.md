@@ -38,11 +38,12 @@ Feel free to contact me (shaowu-chen@foxmail.com) if you have questions about th
 
 # Dataset:
 Find and download UCR 2018 on [UCR2018](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/)
-(Fill Nulls with zeros)
+
+(We simply fill Nulls with zeros)
 
 # Demo/Training:
-- download and save the dataset archieve on the root path
-- run the follow command
+- download and save the dataset archive on the root path
+- run the following command
 
 ```bash
 cd ./ROCKET-PPV-MAX 
