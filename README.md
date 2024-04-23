@@ -52,10 +52,10 @@ python reproduce_experiments_ucr.py -o save_path -n 10 -e 50
 
 # Results
 
-## Pruning ROCKET-PPV-MAX
-- Higher accuracy
- ![image](https://github.com/ShaowuChen/P-ROCKET/assets/78587515/9f0e4290-b313-45ae-8c34-4b8700936181)
+## Pruning ROCKET-PPV-MAX on 85 `bake off' datasets
+![image](https://github.com/ShaowuChen/POCKET/assets/78587515/8c4fc351-8be8-4c7e-b4d8-e920a711df29)
+![image](https://github.com/ShaowuChen/POCKET/assets/78587515/dfc23ac4-208a-48e7-bb4a-be694217f933)
 
-- 11 times Faster
- ![image](https://github.com/ShaowuChen/P-ROCKET/assets/78587515/7f841af8-bc35-42c2-aa98-fb829fa6b5ac)
 
+## Pruning ROCKET-PPV-MAX on 43 `extra' datasets
+![image](https://github.com/ShaowuChen/POCKET/assets/78587515/32c707ee-330a-45ab-8834-a78d1917a408)
