@@ -1,5 +1,5 @@
-# P-ROCKET: Pruning Random Convolution Kernels for Time Series Classification
-![image](https://github.com/ShaowuChen/POCKET/assets/78587515/96a5deb1-672e-491d-8479-fe4df13323d0)
+# POCKET: Pruning Random Convolution Kernels for Time Series Classification
+![image](https://github.com/ShaowuChen/POCKET/assets/78587515/7cff47b7-df40-46c8-80b1-d2ef6ed88bca)
 
 
 Feel free to contact me (shaowu-chen@foxmail.com) if you have questions about the paper. 
@@ -12,7 +12,7 @@ Feel free to contact me (shaowu-chen@foxmail.com) if you have questions about th
 # Idea
 - Pruning random kernels via feature selection in the classifier
 - Propose an ADMM-based Algorithm
-- Propose an accelerated Algorithm: `P-ROCKET`
+- Propose an accelerated Algorithm: `POCKET`
   - two stages; introduce relatively invariant penalties
   - Prune up to `60%` kernels
   - `11`$\times$ faster than compared methods
@@ -23,12 +23,12 @@ Feel free to contact me (shaowu-chen@foxmail.com) if you have questions about th
 - Sklearn (0.24.2)
 
 # Code Description 
-
+**Note that we have rename our algorithm in the manuscript; ```P-ROCKET``` in the code corresponds to  ```POCKET```**
 ```
   ├── ROCKET-PPV-MAX                  : contains code for ROCKET-PPV-MAX
       ├── reproduce_experiments_ucr.py: Main code 
       ├── ADMM_pruner.py              : Our ADMM-based Algorithm
-      ├── PROCKET_pruner.py           : Our P-ROCKET Algorithm
+      ├── PROCKET_pruner.py           : Our POCKET Algorithm
       ├── rocket_functions.py         : Generate kernels
       ├── utils.py                    : Process results
   ├── ROCKET-PPV                      : contains code for ROCKET-PPV
