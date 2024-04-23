@@ -1,5 +1,5 @@
 # POCKET: Pruning Random Convolution Kernels for Time Series Classification
-![image](https://github.com/ShaowuChen/POCKET/assets/78587515/32c707ee-330a-45ab-8834-a78d1917a408)
+![image](https://github.com/ShaowuChen/POCKET/assets/78587515/b585c1f5-5d3c-45d0-bfd4-f1dee8594a1c)
 
 
 
