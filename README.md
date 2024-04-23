@@ -53,98 +53,1250 @@ python reproduce_experiments_ucr.py -o save_path -n 10 -e 50
 # Results
 
 ## Pruning ROCKET-PPV-MAX on 85 `bake off' datasets
-| Datasete         |        |        |        |                 |                 |                 |                 |          |         |          |        |
-|------------------|--------|--------|--------|:---------------:|:---------------:|:---------------:|:---------------:|:--------:|---------|----------|--------|
-|                  |        |        |        |                 |                 |                 |                 |          |         |          |        |
-|                  |        |        |        |                 |                 |                 |                 |          |         |          |        |
-| AVERAGE          | 81.94  | 82.49  | 85.03  | 85.04$\pm$0.51  | 84.88$\pm$0.73  | 85.17$\pm$0.84  | 85.05$\pm$0.72  | 3861.64  | 3226.35 | 3433.97  | 222.95 |
-| Adiac            | 73.40  | 82.89  | 83.63  | 78.13$\pm$0.43  | 78.13$\pm$0.43  | 80.18$\pm$0.54  | 79.87$\pm$0.50  | 10000.00 | 5000.00 | 5551.44  | 270.69 |
-| ArrowHead        | 87.54  | 84.46  | 82.86  | 81.37$\pm$1.03  | 81.77$\pm$1.31  | 80.86$\pm$1.93  | 81.83$\pm$1.59  | 2447.30  | 2447.30 | 398.68   | 136.33 |
-| Beef             | 72.00  | 75.33  | 70.00  | 82.00$\pm$3.71  | 81.00$\pm$2.60  | 82.67$\pm$2.49  | 83.33$\pm$3.65  | 1945.80  | 1945.80 | 411.49   | 133.90 |
-| BeetleFly        | 87.50  | 85.00  | 85.00  | 90.00$\pm$0.00  | 90.00$\pm$0.00  | 89.50$\pm$1.50  | 90.00$\pm$0.00  | 2107.80  | 2107.80 | 200.10   | 120.52 |
-| BirdChicken      | 86.50  | 88.50  | 95.00  | 90.00$\pm$0.00  | 89.00$\pm$3.00  | 90.00$\pm$0.00  | 90.00$\pm$0.00  | 2430.50  | 2430.50 | 199.96   | 121.81 |
-| Car              | 84.67  | 92.50  | 90.00  | 88.33$\pm$1.83  | 88.33$\pm$2.69  | 92.50$\pm$0.83  | 91.67$\pm$1.29  | 3428.50  | 3428.50 | 699.14   | 127.06 |
-| CBF              | 99.33  | 99.50  | 99.89  | 100.00$\pm$0.00 | 99.96$\pm$0.05  | 99.92$\pm$0.07  | 99.98$\pm$0.04  | 1797.90  | 1797.90 | 344.33   | 137.40 |
-| ChlCon           | 63.39  | 84.36  | 87.53  | 81.50$\pm$0.49  | 79.26$\pm$1.46  | 79.43$\pm$0.59  | 80.71$\pm$0.60  | 4066.90  | 4066.90 | 2228.87  | 162.91 |
-| CinCECGTorso     | 93.43  | 82.61  | 85.14  | 83.61$\pm$0.55  | 82.79$\pm$0.74  | 90.86$\pm$2.96  | 88.23$\pm$1.64  | 2443.60  | 2443.60 | 482.42   | 133.08 |
-| Coffee           | 100.00 | 100.00 | 100.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 1805.60  | 1805.60 | 269.08   | 124.87 |
-| Computers        | 64.44  | 81.48  | 81.20  | 76.32$\pm$0.84  | 76.80$\pm$0.95  | 74.60$\pm$1.82  | 77.20$\pm$0.76  | 2674.60  | 2674.60 | 1809.18  | 133.98 |
-| CricketX         | 80.21  | 79.13  | 86.67  | 81.92$\pm$0.49  | 82.05$\pm$0.62  | 82.10$\pm$0.66  | 82.18$\pm$0.80  | 7294.70  | 7294.70 | 2821.87  | 167.17 |
-| CricketY         | 79.38  | 80.33  | 85.13  | 85.38$\pm$0.60  | 85.08$\pm$0.56  | 83.87$\pm$0.75  | 84.90$\pm$0.71  | 5750.10  | 5250.10 | 2835.55  | 166.05 |
-| CricketZ         | 80.10  | 81.15  | 85.90  | 85.44$\pm$0.64  | 85.03$\pm$0.69  | 83.87$\pm$0.71  | 85.10$\pm$0.71  | 7040.30  | 7040.30 | 2836.70  | 169.36 |
-| DiaSizRed        | 96.57  | 30.13  | 93.14  | 97.09$\pm$0.61  | 96.50$\pm$0.84  | 95.59$\pm$2.37  | 97.84$\pm$0.55  | 2423.20  | 2423.20 | 209.88   | 124.90 |
-| DisPhaOutAG      | 73.09  | 71.65  | 72.66  | 75.68$\pm$0.63  | 74.89$\pm$0.99  | 74.89$\pm$0.68  | 73.74$\pm$0.98  | 3284.80  | 3284.80 | 1899.12  | 146.55 |
-| DisPhaOutCor     | 79.28  | 77.10  | 79.35  | 76.74$\pm$0.88  | 77.03$\pm$1.30  | 77.54$\pm$0.96  | 76.27$\pm$1.61  | 3271.00  | 3271.00 | 2499.27  | 146.57 |
-| DisPhaTW$^+$     | 65.97  | 66.47  | 67.63  | 71.94$\pm$0.00  | 70.86$\pm$1.17  | 70.29$\pm$1.82  | 68.85$\pm$2.14  | 2389.40  | 2389.40 | 2013.88  | 123.28 |
-| Earthquakes      | 75.40  | 71.15  | 74.10  | 74.82$\pm$0.00  | 74.82$\pm$0.00  | 74.96$\pm$0.29  | 74.96$\pm$0.54  | 3263.70  | 3263.70 | 2309.86  | 135.02 |
-| ECG200           | 90.90  | 87.40  | 91.00  | 90.40$\pm$0.49  | 89.90$\pm$0.70  | 91.20$\pm$1.17  | 90.60$\pm$0.66  | 1088.10  | 1088.10 | 784.61   | 135.81 |
-| ECG5000          | 93.65  | 93.42  | 94.09  | 94.75$\pm$0.05  | 94.68$\pm$0.09  | 93.55$\pm$0.60  | 94.78$\pm$0.06  | 3390.60  | 3390.60 | 2687.18  | 173.00 |
-| ECGFiveDays      | 84.92  | 97.48  | 100.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 2218.50  | 2218.50 | 205.96   | 124.82 |
-| ElectricDev      | 70.60  | 72.91  | 72.27  | 72.81$\pm$0.25  | 72.72$\pm$0.39  | 72.65$\pm$0.38  | 72.63$\pm$0.30  | 4363.10  | 4363.10 | 48114.26 | 654.77 |
-| FaceAll          | 89.38  | 83.88  | 80.41  | 94.68$\pm$0.40  | 94.64$\pm$0.32  | 94.16$\pm$0.67  | 94.14$\pm$0.78  | 4660.60  | 4660.60 | 4373.65  | 196.47 |
-| FaceFour         | 97.39  | 95.45  | 96.59  | 97.61$\pm$0.34  | 97.61$\pm$0.34  | 98.41$\pm$0.56  | 97.84$\pm$0.34  | 1829.90  | 1829.90 | 321.47   | 125.82 |
-| FacesUCR         | 94.59  | 95.47  | 97.32  | 96.20$\pm$0.09  | 96.20$\pm$0.08  | 96.14$\pm$0.16  | 96.34$\pm$0.08  | 4842.70  | 4842.70 | 1599.40  | 183.20 |
-| FiftyWords       | 83.14  | 73.96  | 84.18  | 82.99$\pm$0.41  | 82.99$\pm$0.41  | 82.00$\pm$0.47  | 82.46$\pm$0.47  | 10000.00 | 5000.00 | 8068.53  | 308.62 |
-| Fish             | 93.49  | 97.94  | 98.29  | 97.83$\pm$0.62  | 98.00$\pm$0.69  | 98.40$\pm$0.56  | 98.74$\pm$0.50  | 2257.90  | 1757.90 | 849.90   | 117.25 |
-| FordA            | 85.46  | 92.05  | 94.83  | 94.43$\pm$0.28  | 94.04$\pm$0.26  | 94.61$\pm$0.18  | 94.05$\pm$0.57  | 2812.60  | 2812.60 | 13065.10 | 273.58 |
-| FordB            | 71.49  | 91.31  | 93.65  | 80.43$\pm$0.78  | 79.81$\pm$0.39  | 80.54$\pm$0.36  | 80.52$\pm$0.67  | 3086.00  | 3086.00 | 14281.01 | 264.23 |
-| GunPoint         | 99.73  | 99.07  | 100.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 99.33$\pm$0.00  | 100.00$\pm$0.00 | 1829.80  | 1829.80 | 314.20   | 104.12 |
-| Ham              | 66.00  | 75.71  | 71.43  | 73.43$\pm$1.16  | 71.62$\pm$2.29  | 77.71$\pm$1.29  | 73.52$\pm$2.03  | 2292.30  | 2292.30 | 615.16   | 105.53 |
-| HandOutlines     | 92.14  | 91.11  | 95.95  | 94.11$\pm$0.20  | 94.05$\pm$0.30  | 94.00$\pm$0.52  | 94.03$\pm$0.46  | 2704.70  | 2704.70 | 3849.30  | 152.11 |
-| Haptics          | 44.45  | 51.88  | 56.82  | 52.11$\pm$0.36  | 52.31$\pm$0.75  | 52.50$\pm$0.70  | 52.89$\pm$0.91  | 3901.70  | 3901.70 | 742.73   | 131.02 |
-| Herring          | 57.97  | 61.88  | 70.31  | 69.53$\pm$1.05  | 67.97$\pm$1.60  | 65.16$\pm$3.28  | 61.72$\pm$1.88  | 2863.80  | 2863.80 | 407.39   | 104.51 |
-| InlineSkate      | 54.18  | 37.31  | 48.55  | 45.87$\pm$0.65  | 45.49$\pm$1.17  | 49.45$\pm$0.88  | 48.42$\pm$0.79  | 4943.00  | 2943.00 | 543.33   | 139.91 |
-| InsWinSou        | 61.87  | 50.65  | 63.48  | 65.66$\pm$0.21  | 65.72$\pm$0.24  | 66.12$\pm$0.71  | 66.23$\pm$0.43  | 2763.50  | 2763.50 | 1354.89  | 133.89 |
-| ItaPowDem        | 96.71  | 96.30  | 96.79  | 96.93$\pm$0.09  | 96.82$\pm$0.15  | 96.95$\pm$0.19  | 96.88$\pm$0.12  | 1050.70  | 1050.70 | 423.84   | 107.16 |
-| LarKitApp        | 78.19  | 89.97  | 90.67  | 90.00$\pm$0.40  | 89.28$\pm$0.88  | 89.01$\pm$0.50  | 89.52$\pm$0.68  | 3535.60  | 3535.60 | 1613.64  | 135.65 |
-| Lightning2       | 86.56  | 77.05  | 80.33  | 76.72$\pm$0.66  | 76.72$\pm$0.98  | 78.52$\pm$2.59  | 80.33$\pm$2.07  | 2626.50  | 2626.50 | 379.77   | 104.81 |
-| Lightning7       | 82.19  | 84.52  | 80.82  | 82.19$\pm$0.61  | 82.88$\pm$1.10  | 80.96$\pm$1.88  | 82.47$\pm$1.19  | 3695.90  | 3695.90 | 797.78   | 111.92 |
-| Mallat           | 95.76  | 97.16  | 96.29  | 95.63$\pm$0.21  | 95.63$\pm$0.21  | 92.99$\pm$1.09  | 95.52$\pm$0.26  | 10000.00 | 5000.00 | 694.15   | 120.00 |
-| Meat             | 93.33  | 96.83  | 95.00  | 94.00$\pm$2.00  | 93.83$\pm$1.07  | 94.17$\pm$0.83  | 94.50$\pm$0.76  | 3599.30  | 3599.30 | 480.54   | 104.11 |
-| MedicalImages    | 75.82  | 77.03  | 79.87  | 79.67$\pm$0.37  | 79.54$\pm$0.40  | 79.05$\pm$0.69  | 79.37$\pm$0.67  | 5141.30  | 4141.30 | 2278.48  | 131.79 |
-| MidPhaOutAG      | 56.23  | 56.88  | 53.25  | 58.64$\pm$0.71  | 61.56$\pm$1.36  | 63.51$\pm$2.23  | 56.17$\pm$1.75  | 2795.10  | 2795.10 | 1707.16  | 114.49 |
-| MidPhaOutCor     | 83.64  | 80.89  | 83.51  | 83.47$\pm$0.76  | 83.92$\pm$1.01  | 83.51$\pm$1.65  | 82.65$\pm$1.13  | 3098.90  | 3098.90 | 2288.76  | 118.32 |
-| MiddlePTW        | 52.92  | 48.44  | 51.30  | 55.78$\pm$0.74  | 54.35$\pm$0.82  | 56.88$\pm$1.79  | 54.87$\pm$0.88  | 3797.90  | 3797.90 | 2012.32  | 119.74 |
-| MoteStrain       | 90.24  | 92.76  | 90.34  | 91.41$\pm$0.30  | 91.53$\pm$0.44  | 91.71$\pm$0.29  | 91.38$\pm$0.38  | 1835.30  | 1835.30 | 144.22   | 105.41 |
-| NonInvFECGT1$^+$ | 90.66  | 94.54  | 96.23  | 95.25$\pm$0.20  | 95.25$\pm$0.20  | 95.80$\pm$0.14  | 95.61$\pm$0.20  | 10000.00 | 5000.00 | 31179.69 | 596.24 |
-| NonInvFECGT2$^+$ | 93.99  | 94.61  | 96.74  | 96.77$\pm$0.19  | 96.77$\pm$0.19  | 96.74$\pm$0.26  | 96.71$\pm$0.18  | 10000.00 | 5000.00 | 31973.74 | 599.28 |
-| OliveOil$^+$     | 86.67  | 83.00  | 86.67  | 91.33$\pm$1.63  | 91.67$\pm$1.67  | 93.00$\pm$1.00  | 93.00$\pm$1.00  | 3194.50  | 3194.50 | 299.23   | 243.63 |
-| OSULeaf$^+$      | 82.73  | 97.85  | 93.39  | 94.01$\pm$0.42  | 93.88$\pm$0.90  | 94.17$\pm$0.91  | 93.68$\pm$0.92  | 2544.80  | 2544.80 | 1003.20  | 253.27 |
-| PhaOutCor$^+$    | 82.35  | 83.90  | 85.43  | 82.96$\pm$0.78  | 82.56$\pm$0.74  | 82.10$\pm$0.45  | 82.73$\pm$0.79  | 3258.50  | 3258.50 | 7441.26  | 308.97 |
-| Phoneme$^+$      | 32.01  | 33.43  | 33.54  | 28.05$\pm$0.20  | 29.41$\pm$0.37  | 24.69$\pm$0.41  | 28.33$\pm$0.42  | 4732.60  | 4732.60 | 2607.88  | 389.57 |
-| Plane$^+$        | 100.00 | 100.00 | 100.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 7082.80  | 5582.80 | 577.74   | 251.66 |
-| ProPhaOutAG$^+$  | 84.63  | 85.32  | 85.37  | 85.51$\pm$0.22  | 85.66$\pm$0.62  | 85.80$\pm$0.67  | 85.27$\pm$0.43  | 1705.40  | 1705.40 | 1752.40  | 243.38 |
-| ProPhaOutCor$^+$ | 87.32  | 92.13  | 93.13  | 90.24$\pm$0.60  | 89.14$\pm$0.74  | 89.73$\pm$0.42  | 90.65$\pm$1.10  | 3019.40  | 3019.40 | 2312.24  | 248.79 |
-| ProPhaTW$^+$     | 77.90  | 78.05  | 77.56  | 81.17$\pm$0.66  | 81.07$\pm$0.72  | 80.49$\pm$0.79  | 79.07$\pm$1.03  | 4931.30  | 3431.30 | 1998.84  | 254.29 |
-| RefDev$^+$       | 53.23  | 52.53  | 50.93  | 53.49$\pm$0.96  | 53.20$\pm$0.87  | 54.08$\pm$0.73  | 53.41$\pm$1.23  | 3720.50  | 3720.50 | 1635.38  | 338.01 |
-| ScreenType$^+$   | 45.52  | 62.16  | 57.60  | 48.56$\pm$1.15  | 49.20$\pm$2.09  | 46.99$\pm$1.54  | 47.92$\pm$0.97  | 3635.10  | 3635.10 | 1639.23  | 345.80 |
-| ShapeletSim$^+$  | 77.61  | 77.94  | 98.89  | 100.00$\pm$0.00 | 99.44$\pm$0.86  | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 2084.20  | 2084.20 | 159.30   | 229.72 |
-| ShapesAll$^+$    | 88.58  | 92.13  | 92.50  | 90.72$\pm$0.22  | 90.72$\pm$0.22  | 90.18$\pm$0.40  | 90.42$\pm$0.30  | 10000.00 | 5000.00 | 10350.97 | 446.24 |
-| SmaKitApp$^+$    | 74.43  | 78.61  | 77.87  | 81.60$\pm$0.46  | 80.96$\pm$1.03  | 82.27$\pm$0.95  | 80.40$\pm$0.96  | 3184.10  | 3184.10 | 1638.70  | 348.32 |
-| SonAIBORobS1$^+$ | 84.58  | 95.81  | 88.35  | 92.26$\pm$0.20  | 92.23$\pm$0.39  | 94.26$\pm$0.58  | 93.16$\pm$0.32  | 1821.50  | 1821.50 | 156.69   | 236.41 |
-| SonAIBORobS2$^+$ | 89.63  | 97.78  | 95.28  | 91.22$\pm$0.27  | 91.22$\pm$0.52  | 92.13$\pm$0.36  | 92.24$\pm$0.55  | 3025.80  | 3025.80 | 181.42   | 241.38 |
-| StarLightC$^+$   | 98.13  | 97.18  | 97.92  | 98.06$\pm$0.05  | 98.06$\pm$0.04  | 98.01$\pm$0.13  | 98.00$\pm$0.13  | 4035.80  | 2535.80 | 4544.64  | 409.38 |
-| Strawberry$^+$   | 96.84  | 98.05  | 98.38  | 98.14$\pm$0.08  | 98.03$\pm$0.34  | 97.62$\pm$0.48  | 98.30$\pm$0.27  | 3239.80  | 3239.80 | 2399.56  | 260.15 |
-| SwedishLeaf$^+$  | 94.66  | 95.63  | 97.12  | 96.56$\pm$0.29  | 96.32$\pm$0.35  | 96.45$\pm$0.34  | 96.50$\pm$0.27  | 8106.60  | 7106.60 | 3604.54  | 300.89 |
-| Symbols$^+$      | 96.16  | 90.64  | 98.19  | 97.43$\pm$0.05  | 97.43$\pm$0.05  | 97.84$\pm$0.16  | 97.46$\pm$0.06  | 10000.00 | 5000.00 | 296.87   | 162.06 |
-| SynCon$^+$       | 99.53  | 99.83  | 99.67  | 99.97$\pm$0.10  | 99.73$\pm$0.29  | 99.03$\pm$0.10  | 99.83$\pm$0.22  | 5810.70  | 5810.70 | 1495.16  | 264.37 |
-| ToeSeg1$^+$      | 92.46  | 96.27  | 96.93  | 96.80$\pm$0.34  | 96.62$\pm$0.34  | 95.26$\pm$1.25  | 95.88$\pm$0.35  | 1071.80  | 1071.80 | 267.47   | 244.17 |
-| ToeSeg2$^+$      | 86.23  | 90.62  | 93.85  | 92.08$\pm$0.35  | 92.54$\pm$1.24  | 93.77$\pm$1.16  | 92.62$\pm$0.92  | 1091.60  | 1091.60 | 258.58   | 243.47 |
-| Trace$^+$        | 100.00 | 100.00 | 100.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 1826.30  | 1826.30 | 866.61   | 237.49 |
-| TwoLeadECG$^+$   | 98.86  | 100.00 | 99.56  | 99.91$\pm$0.00  | 99.91$\pm$0.00  | 99.91$\pm$0.00  | 99.91$\pm$0.00  | 1840.70  | 1840.70 | 165.23   | 297.16 |
-| TwoPatterns$^+$  | 99.96  | 99.99  | 100.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 100.00$\pm$0.00 | 1474.20  | 1474.20 | 4908.68  | 279.18 |
-| UWavGesLibA$^+$  | 97.23  | 85.95  | 95.45  | 97.57$\pm$0.08  | 97.36$\pm$0.29  | 97.50$\pm$0.17  | 97.56$\pm$0.15  | 3914.80  | 3914.80 | 5160.15  | 362.54 |
-| UWavGesLibX$^+$  | 82.86  | 78.05  | 82.47  | 85.50$\pm$0.21  | 85.28$\pm$0.47  | 85.14$\pm$0.42  | 85.26$\pm$0.28  | 6413.70  | 3413.70 | 5167.12  | 361.90 |
-| UWavGesLibY$^+$  | 76.15  | 67.01  | 76.88  | 77.32$\pm$0.23  | 76.99$\pm$0.65  | 76.62$\pm$0.51  | 77.26$\pm$0.48  | 4142.30  | 2642.30 | 5208.30  | 362.11 |
-| UWavGesLibZ$^+$  | 76.40  | 75.01  | 76.97  | 79.13$\pm$0.20  | 78.67$\pm$0.45  | 79.15$\pm$0.27  | 78.96$\pm$0.47  | 2373.20  | 1873.20 | 5176.96  | 361.32 |
-| Wafer$^+$        | 99.55  | 99.86  | 99.87  | 99.83$\pm$0.01  | 99.78$\pm$0.06  | 99.86$\pm$0.04  | 99.83$\pm$0.06  | 1636.90  | 1636.90 | 4069.17  | 298.65 |
-| Wine$^+$         | 56.85  | 74.44  | 66.67  | 80.93$\pm$2.99  | 80.37$\pm$3.72  | 83.15$\pm$5.46  | 82.96$\pm$4.96  | 2496.60  | 2496.60 | 364.49   | 240.98 |
-| WordSynonyms$^+$ | 77.87  | 62.24  | 75.55  | 75.33$\pm$0.27  | 75.34$\pm$0.27  | 75.47$\pm$0.73  | 76.00$\pm$0.45  | 9825.40  | 5325.40 | 2422.28  | 317.08 |
-| Worms$^+$        | 71.82  | 79.09  | 80.52  | 73.25$\pm$1.04  | 73.25$\pm$1.45  | 73.12$\pm$1.65  | 72.21$\pm$1.32  | 2563.70  | 2563.70 | 877.64   | 328.10 |
-| WormsTwoCla$^+$  | 78.44  | 74.68  | 79.22  | 78.96$\pm$1.82  | 79.35$\pm$1.69  | 80.91$\pm$1.65  | 77.79$\pm$1.23  | 3403.80  | 3403.80 | 1026.81  | 324.07 |
-| Yoga$^+$         | 87.86  | 87.02  | 90.57  | 91.16$\pm$0.36  | 90.43$\pm$0.43  | 91.38$\pm$0.43  | 91.48$\pm$0.52  | 2140.20  | 2140.20 | 1680.05  | 237.54 |
-![image](https://github.com/ShaowuChen/POCKET/assets/78587515/8c4fc351-8be8-4c7e-b4d8-e920a711df29)
-![image](https://github.com/ShaowuChen/POCKET/assets/78587515/dfc23ac4-208a-48e7-bb4a-be694217f933)
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-kaq8{border-color:inherit;color:#fe0000;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-4erg{border-color:inherit;font-style:italic;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky" rowspan="3">Dataset</th>
+    <th class="tg-0pky" rowspan="3">PF<br>Acc.<br>(%)</th>
+    <th class="tg-0pky" rowspan="3">ResNet<br>Acc.<br>(%)</th>
+    <th class="tg-0pky" rowspan="3">ITime<br>Acc.<br>(%)</th>
+    <th class="tg-c3ow" colspan="8">ROCKET &amp; Pruning</th>
+  </tr>
+  <tr>
+    <th class="tg-c3ow" colspan="4">Acc. (%)</th>
+    <th class="tg-c3ow" colspan="2"># Remaining Kernels</th>
+    <th class="tg-c3ow" colspan="2">Overall Pruning Time (s)</th>
+  </tr>
+  <tr>
+    <th class="tg-0pky">Unpruned<br>ROCKET</th>
+    <th class="tg-0pky">S-ROCKET</th>
+    <th class="tg-fymr">POCKET<br>Stage 1</th>
+    <th class="tg-fymr">POCKET<br>Stage 2</th>
+    <th class="tg-0pky">S-ROCKET</th>
+    <th class="tg-fymr">POCKET</th>
+    <th class="tg-0pky">S-ROCKET</th>
+    <th class="tg-fymr">POCKET</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-4erg">AVERAGE</td>
+    <td class="tg-0pky">81.94</td>
+    <td class="tg-0pky">82.49</td>
+    <td class="tg-0pky">85.03</td>
+    <td class="tg-0pky">85.04±0.51</td>
+    <td class="tg-0pky">84.88±0.73</td>
+    <td class="tg-0pky">85.17±0.84</td>
+    <td class="tg-kaq8">85.05±0.72</td>
+    <td class="tg-0pky">3861.64</td>
+    <td class="tg-kaq8">3226.35</td>
+    <td class="tg-0pky">3433.97</td>
+    <td class="tg-kaq8">222.95</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Adiac</td>
+    <td class="tg-0pky">73.40</td>
+    <td class="tg-0pky">82.89</td>
+    <td class="tg-0pky">83.63</td>
+    <td class="tg-0pky">78.13±0.43</td>
+    <td class="tg-0pky">78.13±0.43</td>
+    <td class="tg-0pky">80.18±0.54</td>
+    <td class="tg-0pky">79.87±0.50</td>
+    <td class="tg-0pky">10000.00</td>
+    <td class="tg-0pky">5000.00</td>
+    <td class="tg-0pky">5551.44</td>
+    <td class="tg-0pky">270.69</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ArrowHead</td>
+    <td class="tg-0pky">87.54</td>
+    <td class="tg-0pky">84.46</td>
+    <td class="tg-0pky">82.86</td>
+    <td class="tg-0pky">81.37±1.03</td>
+    <td class="tg-0pky">81.77±1.31</td>
+    <td class="tg-0pky">80.86±1.93</td>
+    <td class="tg-0pky">81.83±1.59</td>
+    <td class="tg-0pky">2447.30</td>
+    <td class="tg-0pky">2447.30</td>
+    <td class="tg-0pky">398.68</td>
+    <td class="tg-0pky">136.33</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Beef</td>
+    <td class="tg-0pky">72.00</td>
+    <td class="tg-0pky">75.33</td>
+    <td class="tg-0pky">70.00</td>
+    <td class="tg-0pky">82.00±3.71</td>
+    <td class="tg-0pky">81.00±2.60</td>
+    <td class="tg-0pky">82.67±2.49</td>
+    <td class="tg-0pky">83.33±3.65</td>
+    <td class="tg-0pky">1945.80</td>
+    <td class="tg-0pky">1945.80</td>
+    <td class="tg-0pky">411.49</td>
+    <td class="tg-0pky">133.90</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">BeetleFly</td>
+    <td class="tg-0pky">87.50</td>
+    <td class="tg-0pky">85.00</td>
+    <td class="tg-0pky">85.00</td>
+    <td class="tg-0pky">90.00±0.00</td>
+    <td class="tg-0pky">90.00±0.00</td>
+    <td class="tg-0pky">89.50±1.50</td>
+    <td class="tg-0pky">90.00±0.00</td>
+    <td class="tg-0pky">2107.80</td>
+    <td class="tg-0pky">2107.80</td>
+    <td class="tg-0pky">200.10</td>
+    <td class="tg-0pky">120.52</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">BirdChicken</td>
+    <td class="tg-0pky">86.50</td>
+    <td class="tg-0pky">88.50</td>
+    <td class="tg-0pky">95.00</td>
+    <td class="tg-0pky">90.00±0.00</td>
+    <td class="tg-0pky">89.00±3.00</td>
+    <td class="tg-0pky">90.00±0.00</td>
+    <td class="tg-0pky">90.00±0.00</td>
+    <td class="tg-0pky">2430.50</td>
+    <td class="tg-0pky">2430.50</td>
+    <td class="tg-0pky">199.96</td>
+    <td class="tg-0pky">121.81</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Car</td>
+    <td class="tg-0pky">84.67</td>
+    <td class="tg-0pky">92.50</td>
+    <td class="tg-0pky">90.00</td>
+    <td class="tg-0pky">88.33±1.83</td>
+    <td class="tg-0pky">88.33±2.69</td>
+    <td class="tg-0pky">92.50±0.83</td>
+    <td class="tg-0pky">91.67±1.29</td>
+    <td class="tg-0pky">3428.50</td>
+    <td class="tg-0pky">3428.50</td>
+    <td class="tg-0pky">699.14</td>
+    <td class="tg-0pky">127.06</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">CBF</td>
+    <td class="tg-0pky">99.33</td>
+    <td class="tg-0pky">99.50</td>
+    <td class="tg-0pky">99.89</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">99.96±0.05</td>
+    <td class="tg-0pky">99.92±0.07</td>
+    <td class="tg-0pky">99.98±0.04</td>
+    <td class="tg-0pky">1797.90</td>
+    <td class="tg-0pky">1797.90</td>
+    <td class="tg-0pky">344.33</td>
+    <td class="tg-0pky">137.40</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ChlCon</td>
+    <td class="tg-0pky">63.39</td>
+    <td class="tg-0pky">84.36</td>
+    <td class="tg-0pky">87.53</td>
+    <td class="tg-0pky">81.50±0.49</td>
+    <td class="tg-0pky">79.26±1.46</td>
+    <td class="tg-0pky">79.43±0.59</td>
+    <td class="tg-0pky">80.71±0.60</td>
+    <td class="tg-0pky">4066.90</td>
+    <td class="tg-0pky">4066.90</td>
+    <td class="tg-0pky">2228.87</td>
+    <td class="tg-0pky">162.91</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">CinCECGTorso</td>
+    <td class="tg-0pky">93.43</td>
+    <td class="tg-0pky">82.61</td>
+    <td class="tg-0pky">85.14</td>
+    <td class="tg-0pky">83.61±0.55</td>
+    <td class="tg-0pky">82.79±0.74</td>
+    <td class="tg-0pky">90.86±2.96</td>
+    <td class="tg-0pky">88.23±1.64</td>
+    <td class="tg-0pky">2443.60</td>
+    <td class="tg-0pky">2443.60</td>
+    <td class="tg-0pky">482.42</td>
+    <td class="tg-0pky">133.08</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Coffee</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">1805.60</td>
+    <td class="tg-0pky">1805.60</td>
+    <td class="tg-0pky">269.08</td>
+    <td class="tg-0pky">124.87</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Computers</td>
+    <td class="tg-0pky">64.44</td>
+    <td class="tg-0pky">81.48</td>
+    <td class="tg-0pky">81.20</td>
+    <td class="tg-0pky">76.32±0.84</td>
+    <td class="tg-0pky">76.80±0.95</td>
+    <td class="tg-0pky">74.60±1.82</td>
+    <td class="tg-0pky">77.20±0.76</td>
+    <td class="tg-0pky">2674.60</td>
+    <td class="tg-0pky">2674.60</td>
+    <td class="tg-0pky">1809.18</td>
+    <td class="tg-0pky">133.98</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">CricketX</td>
+    <td class="tg-0pky">80.21</td>
+    <td class="tg-0pky">79.13</td>
+    <td class="tg-0pky">86.67</td>
+    <td class="tg-0pky">81.92±0.49</td>
+    <td class="tg-0pky">82.05±0.62</td>
+    <td class="tg-0pky">82.10±0.66</td>
+    <td class="tg-0pky">82.18±0.80</td>
+    <td class="tg-0pky">7294.70</td>
+    <td class="tg-0pky">7294.70</td>
+    <td class="tg-0pky">2821.87</td>
+    <td class="tg-0pky">167.17</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">CricketY</td>
+    <td class="tg-0pky">79.38</td>
+    <td class="tg-0pky">80.33</td>
+    <td class="tg-0pky">85.13</td>
+    <td class="tg-0pky">85.38±0.60</td>
+    <td class="tg-0pky">85.08±0.56</td>
+    <td class="tg-0pky">83.87±0.75</td>
+    <td class="tg-0pky">84.90±0.71</td>
+    <td class="tg-0pky">5750.10</td>
+    <td class="tg-0pky">5250.10</td>
+    <td class="tg-0pky">2835.55</td>
+    <td class="tg-0pky">166.05</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">CricketZ</td>
+    <td class="tg-0pky">80.10</td>
+    <td class="tg-0pky">81.15</td>
+    <td class="tg-0pky">85.90</td>
+    <td class="tg-0pky">85.44±0.64</td>
+    <td class="tg-0pky">85.03±0.69</td>
+    <td class="tg-0pky">83.87±0.71</td>
+    <td class="tg-0pky">85.10±0.71</td>
+    <td class="tg-0pky">7040.30</td>
+    <td class="tg-0pky">7040.30</td>
+    <td class="tg-0pky">2836.70</td>
+    <td class="tg-0pky">169.36</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">DiaSizRed</td>
+    <td class="tg-0pky">96.57</td>
+    <td class="tg-0pky">30.13</td>
+    <td class="tg-0pky">93.14</td>
+    <td class="tg-0pky">97.09±0.61</td>
+    <td class="tg-0pky">96.50±0.84</td>
+    <td class="tg-0pky">95.59±2.37</td>
+    <td class="tg-0pky">97.84±0.55</td>
+    <td class="tg-0pky">2423.20</td>
+    <td class="tg-0pky">2423.20</td>
+    <td class="tg-0pky">209.88</td>
+    <td class="tg-0pky">124.90</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">DisPhaOutAG</td>
+    <td class="tg-0pky">73.09</td>
+    <td class="tg-0pky">71.65</td>
+    <td class="tg-0pky">72.66</td>
+    <td class="tg-0pky">75.68±0.63</td>
+    <td class="tg-0pky">74.89±0.99</td>
+    <td class="tg-0pky">74.89±0.68</td>
+    <td class="tg-0pky">73.74±0.98</td>
+    <td class="tg-0pky">3284.80</td>
+    <td class="tg-0pky">3284.80</td>
+    <td class="tg-0pky">1899.12</td>
+    <td class="tg-0pky">146.55</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">DisPhaOutCor</td>
+    <td class="tg-0pky">79.28</td>
+    <td class="tg-0pky">77.10</td>
+    <td class="tg-0pky">79.35</td>
+    <td class="tg-0pky">76.74±0.88</td>
+    <td class="tg-0pky">77.03±1.30</td>
+    <td class="tg-0pky">77.54±0.96</td>
+    <td class="tg-0pky">76.27±1.61</td>
+    <td class="tg-0pky">3271.00</td>
+    <td class="tg-0pky">3271.00</td>
+    <td class="tg-0pky">2499.27</td>
+    <td class="tg-0pky">146.57</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">DisPhaTW</td>
+    <td class="tg-0pky">65.97</td>
+    <td class="tg-0pky">66.47</td>
+    <td class="tg-0pky">67.63</td>
+    <td class="tg-0pky">71.94±0.00</td>
+    <td class="tg-0pky">70.86±1.17</td>
+    <td class="tg-0pky">70.29±1.82</td>
+    <td class="tg-0pky">68.85±2.14</td>
+    <td class="tg-0pky">2389.40</td>
+    <td class="tg-0pky">2389.40</td>
+    <td class="tg-0pky">2013.88</td>
+    <td class="tg-0pky">123.28</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Earthquakes</td>
+    <td class="tg-0pky">75.40</td>
+    <td class="tg-0pky">71.15</td>
+    <td class="tg-0pky">74.10</td>
+    <td class="tg-0pky">74.82±0.00</td>
+    <td class="tg-0pky">74.82±0.00</td>
+    <td class="tg-0pky">74.96±0.29</td>
+    <td class="tg-0pky">74.96±0.54</td>
+    <td class="tg-0pky">3263.70</td>
+    <td class="tg-0pky">3263.70</td>
+    <td class="tg-0pky">2309.86</td>
+    <td class="tg-0pky">135.02</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ECG200</td>
+    <td class="tg-0pky">90.90</td>
+    <td class="tg-0pky">87.40</td>
+    <td class="tg-0pky">91.00</td>
+    <td class="tg-0pky">90.40±0.49</td>
+    <td class="tg-0pky">89.90±0.70</td>
+    <td class="tg-0pky">91.20±1.17</td>
+    <td class="tg-0pky">90.60±0.66</td>
+    <td class="tg-0pky">1088.10</td>
+    <td class="tg-0pky">1088.10</td>
+    <td class="tg-0pky">784.61</td>
+    <td class="tg-0pky">135.81</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ECG5000</td>
+    <td class="tg-0pky">93.65</td>
+    <td class="tg-0pky">93.42</td>
+    <td class="tg-0pky">94.09</td>
+    <td class="tg-0pky">94.75±0.05</td>
+    <td class="tg-0pky">94.68±0.09</td>
+    <td class="tg-0pky">93.55±0.60</td>
+    <td class="tg-0pky">94.78±0.06</td>
+    <td class="tg-0pky">3390.60</td>
+    <td class="tg-0pky">3390.60</td>
+    <td class="tg-0pky">2687.18</td>
+    <td class="tg-0pky">173.00</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ECGFiveDays</td>
+    <td class="tg-0pky">84.92</td>
+    <td class="tg-0pky">97.48</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">2218.50</td>
+    <td class="tg-0pky">2218.50</td>
+    <td class="tg-0pky">205.96</td>
+    <td class="tg-0pky">124.82</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ElectricDev</td>
+    <td class="tg-0pky">70.60</td>
+    <td class="tg-0pky">72.91</td>
+    <td class="tg-0pky">72.27</td>
+    <td class="tg-0pky">72.81±0.25</td>
+    <td class="tg-0pky">72.72±0.39</td>
+    <td class="tg-0pky">72.65±0.38</td>
+    <td class="tg-0pky">72.63±0.30</td>
+    <td class="tg-0pky">4363.10</td>
+    <td class="tg-0pky">4363.10</td>
+    <td class="tg-0pky">48114.26</td>
+    <td class="tg-0pky">654.77</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FaceAll</td>
+    <td class="tg-0pky">89.38</td>
+    <td class="tg-0pky">83.88</td>
+    <td class="tg-0pky">80.41</td>
+    <td class="tg-0pky">94.68±0.40</td>
+    <td class="tg-0pky">94.64±0.32</td>
+    <td class="tg-0pky">94.16±0.67</td>
+    <td class="tg-0pky">94.14±0.78</td>
+    <td class="tg-0pky">4660.60</td>
+    <td class="tg-0pky">4660.60</td>
+    <td class="tg-0pky">4373.65</td>
+    <td class="tg-0pky">196.47</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FaceFour</td>
+    <td class="tg-0pky">97.39</td>
+    <td class="tg-0pky">95.45</td>
+    <td class="tg-0pky">96.59</td>
+    <td class="tg-0pky">97.61±0.34</td>
+    <td class="tg-0pky">97.61±0.34</td>
+    <td class="tg-0pky">98.41±0.56</td>
+    <td class="tg-0pky">97.84±0.34</td>
+    <td class="tg-0pky">1829.90</td>
+    <td class="tg-0pky">1829.90</td>
+    <td class="tg-0pky">321.47</td>
+    <td class="tg-0pky">125.82</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FacesUCR</td>
+    <td class="tg-0pky">94.59</td>
+    <td class="tg-0pky">95.47</td>
+    <td class="tg-0pky">97.32</td>
+    <td class="tg-0pky">96.20±0.09</td>
+    <td class="tg-0pky">96.20±0.08</td>
+    <td class="tg-0pky">96.14±0.16</td>
+    <td class="tg-0pky">96.34±0.08</td>
+    <td class="tg-0pky">4842.70</td>
+    <td class="tg-0pky">4842.70</td>
+    <td class="tg-0pky">1599.40</td>
+    <td class="tg-0pky">183.20</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FiftyWords</td>
+    <td class="tg-0pky">83.14</td>
+    <td class="tg-0pky">73.96</td>
+    <td class="tg-0pky">84.18</td>
+    <td class="tg-0pky">82.99±0.41</td>
+    <td class="tg-0pky">82.99±0.41</td>
+    <td class="tg-0pky">82.00±0.47</td>
+    <td class="tg-0pky">82.46±0.47</td>
+    <td class="tg-0pky">10000.00</td>
+    <td class="tg-0pky">5000.00</td>
+    <td class="tg-0pky">8068.53</td>
+    <td class="tg-0pky">308.62</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Fish</td>
+    <td class="tg-0pky">93.49</td>
+    <td class="tg-0pky">97.94</td>
+    <td class="tg-0pky">98.29</td>
+    <td class="tg-0pky">97.83±0.62</td>
+    <td class="tg-0pky">98.00±0.69</td>
+    <td class="tg-0pky">98.40±0.56</td>
+    <td class="tg-0pky">98.74±0.50</td>
+    <td class="tg-0pky">2257.90</td>
+    <td class="tg-0pky">1757.90</td>
+    <td class="tg-0pky">849.90</td>
+    <td class="tg-0pky">117.25</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FordA</td>
+    <td class="tg-0pky">85.46</td>
+    <td class="tg-0pky">92.05</td>
+    <td class="tg-0pky">94.83</td>
+    <td class="tg-0pky">94.43±0.28</td>
+    <td class="tg-0pky">94.04±0.26</td>
+    <td class="tg-0pky">94.61±0.18</td>
+    <td class="tg-0pky">94.05±0.57</td>
+    <td class="tg-0pky">2812.60</td>
+    <td class="tg-0pky">2812.60</td>
+    <td class="tg-0pky">13065.10</td>
+    <td class="tg-0pky">273.58</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FordB</td>
+    <td class="tg-0pky">71.49</td>
+    <td class="tg-0pky">91.31</td>
+    <td class="tg-0pky">93.65</td>
+    <td class="tg-0pky">80.43±0.78</td>
+    <td class="tg-0pky">79.81±0.39</td>
+    <td class="tg-0pky">80.54±0.36</td>
+    <td class="tg-0pky">80.52±0.67</td>
+    <td class="tg-0pky">3086.00</td>
+    <td class="tg-0pky">3086.00</td>
+    <td class="tg-0pky">14281.01</td>
+    <td class="tg-0pky">264.23</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">GunPoint</td>
+    <td class="tg-0pky">99.73</td>
+    <td class="tg-0pky">99.07</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">99.33±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">1829.80</td>
+    <td class="tg-0pky">1829.80</td>
+    <td class="tg-0pky">314.20</td>
+    <td class="tg-0pky">104.12</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Ham</td>
+    <td class="tg-0pky">66.00</td>
+    <td class="tg-0pky">75.71</td>
+    <td class="tg-0pky">71.43</td>
+    <td class="tg-0pky">73.43±1.16</td>
+    <td class="tg-0pky">71.62±2.29</td>
+    <td class="tg-0pky">77.71±1.29</td>
+    <td class="tg-0pky">73.52±2.03</td>
+    <td class="tg-0pky">2292.30</td>
+    <td class="tg-0pky">2292.30</td>
+    <td class="tg-0pky">615.16</td>
+    <td class="tg-0pky">105.53</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">HandOutlines</td>
+    <td class="tg-0pky">92.14</td>
+    <td class="tg-0pky">91.11</td>
+    <td class="tg-0pky">95.95</td>
+    <td class="tg-0pky">94.11±0.20</td>
+    <td class="tg-0pky">94.05±0.30</td>
+    <td class="tg-0pky">94.00±0.52</td>
+    <td class="tg-0pky">94.03±0.46</td>
+    <td class="tg-0pky">2704.70</td>
+    <td class="tg-0pky">2704.70</td>
+    <td class="tg-0pky">3849.30</td>
+    <td class="tg-0pky">152.11</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Haptics</td>
+    <td class="tg-0pky">44.45</td>
+    <td class="tg-0pky">51.88</td>
+    <td class="tg-0pky">56.82</td>
+    <td class="tg-0pky">52.11±0.36</td>
+    <td class="tg-0pky">52.31±0.75</td>
+    <td class="tg-0pky">52.50±0.70</td>
+    <td class="tg-0pky">52.89±0.91</td>
+    <td class="tg-0pky">3901.70</td>
+    <td class="tg-0pky">3901.70</td>
+    <td class="tg-0pky">742.73</td>
+    <td class="tg-0pky">131.02</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Herring</td>
+    <td class="tg-0pky">57.97</td>
+    <td class="tg-0pky">61.88</td>
+    <td class="tg-0pky">70.31</td>
+    <td class="tg-0pky">69.53±1.05</td>
+    <td class="tg-0pky">67.97±1.60</td>
+    <td class="tg-0pky">65.16±3.28</td>
+    <td class="tg-0pky">61.72±1.88</td>
+    <td class="tg-0pky">2863.80</td>
+    <td class="tg-0pky">2863.80</td>
+    <td class="tg-0pky">407.39</td>
+    <td class="tg-0pky">104.51</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">InlineSkate</td>
+    <td class="tg-0pky">54.18</td>
+    <td class="tg-0pky">37.31</td>
+    <td class="tg-0pky">48.55</td>
+    <td class="tg-0pky">45.87±0.65</td>
+    <td class="tg-0pky">45.49±1.17</td>
+    <td class="tg-0pky">49.45±0.88</td>
+    <td class="tg-0pky">48.42±0.79</td>
+    <td class="tg-0pky">4943.00</td>
+    <td class="tg-0pky">2943.00</td>
+    <td class="tg-0pky">543.33</td>
+    <td class="tg-0pky">139.91</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">InsWinSou</td>
+    <td class="tg-0pky">61.87</td>
+    <td class="tg-0pky">50.65</td>
+    <td class="tg-0pky">63.48</td>
+    <td class="tg-0pky">65.66±0.21</td>
+    <td class="tg-0pky">65.72±0.24</td>
+    <td class="tg-0pky">66.12±0.71</td>
+    <td class="tg-0pky">66.23±0.43</td>
+    <td class="tg-0pky">2763.50</td>
+    <td class="tg-0pky">2763.50</td>
+    <td class="tg-0pky">1354.89</td>
+    <td class="tg-0pky">133.89</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ItaPowDem</td>
+    <td class="tg-0pky">96.71</td>
+    <td class="tg-0pky">96.30</td>
+    <td class="tg-0pky">96.79</td>
+    <td class="tg-0pky">96.93±0.09</td>
+    <td class="tg-0pky">96.82±0.15</td>
+    <td class="tg-0pky">96.95±0.19</td>
+    <td class="tg-0pky">96.88±0.12</td>
+    <td class="tg-0pky">1050.70</td>
+    <td class="tg-0pky">1050.70</td>
+    <td class="tg-0pky">423.84</td>
+    <td class="tg-0pky">107.16</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">LarKitApp</td>
+    <td class="tg-0pky">78.19</td>
+    <td class="tg-0pky">89.97</td>
+    <td class="tg-0pky">90.67</td>
+    <td class="tg-0pky">90.00±0.40</td>
+    <td class="tg-0pky">89.28±0.88</td>
+    <td class="tg-0pky">89.01±0.50</td>
+    <td class="tg-0pky">89.52±0.68</td>
+    <td class="tg-0pky">3535.60</td>
+    <td class="tg-0pky">3535.60</td>
+    <td class="tg-0pky">1613.64</td>
+    <td class="tg-0pky">135.65</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Lightning2</td>
+    <td class="tg-0pky">86.56</td>
+    <td class="tg-0pky">77.05</td>
+    <td class="tg-0pky">80.33</td>
+    <td class="tg-0pky">76.72±0.66</td>
+    <td class="tg-0pky">76.72±0.98</td>
+    <td class="tg-0pky">78.52±2.59</td>
+    <td class="tg-0pky">80.33±2.07</td>
+    <td class="tg-0pky">2626.50</td>
+    <td class="tg-0pky">2626.50</td>
+    <td class="tg-0pky">379.77</td>
+    <td class="tg-0pky">104.81</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Lightning7</td>
+    <td class="tg-0pky">82.19</td>
+    <td class="tg-0pky">84.52</td>
+    <td class="tg-0pky">80.82</td>
+    <td class="tg-0pky">82.19±0.61</td>
+    <td class="tg-0pky">82.88±1.10</td>
+    <td class="tg-0pky">80.96±1.88</td>
+    <td class="tg-0pky">82.47±1.19</td>
+    <td class="tg-0pky">3695.90</td>
+    <td class="tg-0pky">3695.90</td>
+    <td class="tg-0pky">797.78</td>
+    <td class="tg-0pky">111.92</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Mallat</td>
+    <td class="tg-0pky">95.76</td>
+    <td class="tg-0pky">97.16</td>
+    <td class="tg-0pky">96.29</td>
+    <td class="tg-0pky">95.63±0.21</td>
+    <td class="tg-0pky">95.63±0.21</td>
+    <td class="tg-0pky">92.99±1.09</td>
+    <td class="tg-0pky">95.52±0.26</td>
+    <td class="tg-0pky">10000.00</td>
+    <td class="tg-0pky">5000.00</td>
+    <td class="tg-0pky">694.15</td>
+    <td class="tg-0pky">120.00</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Meat</td>
+    <td class="tg-0pky">93.33</td>
+    <td class="tg-0pky">96.83</td>
+    <td class="tg-0pky">95.00</td>
+    <td class="tg-0pky">94.00±2.00</td>
+    <td class="tg-0pky">93.83±1.07</td>
+    <td class="tg-0pky">94.17±0.83</td>
+    <td class="tg-0pky">94.50±0.76</td>
+    <td class="tg-0pky">3599.30</td>
+    <td class="tg-0pky">3599.30</td>
+    <td class="tg-0pky">480.54</td>
+    <td class="tg-0pky">104.11</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">MedicalImages</td>
+    <td class="tg-0pky">75.82</td>
+    <td class="tg-0pky">77.03</td>
+    <td class="tg-0pky">79.87</td>
+    <td class="tg-0pky">79.67±0.37</td>
+    <td class="tg-0pky">79.54±0.40</td>
+    <td class="tg-0pky">79.05±0.69</td>
+    <td class="tg-0pky">79.37±0.67</td>
+    <td class="tg-0pky">5141.30</td>
+    <td class="tg-0pky">4141.30</td>
+    <td class="tg-0pky">2278.48</td>
+    <td class="tg-0pky">131.79</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">MidPhaOutAG</td>
+    <td class="tg-0pky">56.23</td>
+    <td class="tg-0pky">56.88</td>
+    <td class="tg-0pky">53.25</td>
+    <td class="tg-0pky">58.64±0.71</td>
+    <td class="tg-0pky">61.56±1.36</td>
+    <td class="tg-0pky">63.51±2.23</td>
+    <td class="tg-0pky">56.17±1.75</td>
+    <td class="tg-0pky">2795.10</td>
+    <td class="tg-0pky">2795.10</td>
+    <td class="tg-0pky">1707.16</td>
+    <td class="tg-0pky">114.49</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">MidPhaOutCor</td>
+    <td class="tg-0pky">83.64</td>
+    <td class="tg-0pky">80.89</td>
+    <td class="tg-0pky">83.51</td>
+    <td class="tg-0pky">83.47±0.76</td>
+    <td class="tg-0pky">83.92±1.01</td>
+    <td class="tg-0pky">83.51±1.65</td>
+    <td class="tg-0pky">82.65±1.13</td>
+    <td class="tg-0pky">3098.90</td>
+    <td class="tg-0pky">3098.90</td>
+    <td class="tg-0pky">2288.76</td>
+    <td class="tg-0pky">118.32</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">MiddlePTW</td>
+    <td class="tg-0pky">52.92</td>
+    <td class="tg-0pky">48.44</td>
+    <td class="tg-0pky">51.30</td>
+    <td class="tg-0pky">55.78±0.74</td>
+    <td class="tg-0pky">54.35±0.82</td>
+    <td class="tg-0pky">56.88±1.79</td>
+    <td class="tg-0pky">54.87±0.88</td>
+    <td class="tg-0pky">3797.90</td>
+    <td class="tg-0pky">3797.90</td>
+    <td class="tg-0pky">2012.32</td>
+    <td class="tg-0pky">119.74</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">MoteStrain</td>
+    <td class="tg-0pky">90.24</td>
+    <td class="tg-0pky">92.76</td>
+    <td class="tg-0pky">90.34</td>
+    <td class="tg-0pky">91.41±0.30</td>
+    <td class="tg-0pky">91.53±0.44</td>
+    <td class="tg-0pky">91.71±0.29</td>
+    <td class="tg-0pky">91.38±0.38</td>
+    <td class="tg-0pky">1835.30</td>
+    <td class="tg-0pky">1835.30</td>
+    <td class="tg-0pky">144.22</td>
+    <td class="tg-0pky">105.41</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">NonInvFECGT1</td>
+    <td class="tg-0pky">90.66</td>
+    <td class="tg-0pky">94.54</td>
+    <td class="tg-0pky">96.23</td>
+    <td class="tg-0pky">95.25±0.20</td>
+    <td class="tg-0pky">95.25±0.20</td>
+    <td class="tg-0pky">95.80±0.14</td>
+    <td class="tg-0pky">95.61±0.20</td>
+    <td class="tg-0pky">10000.00</td>
+    <td class="tg-0pky">5000.00</td>
+    <td class="tg-0pky">31179.69</td>
+    <td class="tg-0pky">596.24</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">NonInvFECGT2</td>
+    <td class="tg-0pky">93.99</td>
+    <td class="tg-0pky">94.61</td>
+    <td class="tg-0pky">96.74</td>
+    <td class="tg-0pky">96.77±0.19</td>
+    <td class="tg-0pky">96.77±0.19</td>
+    <td class="tg-0pky">96.74±0.26</td>
+    <td class="tg-0pky">96.71±0.18</td>
+    <td class="tg-0pky">10000.00</td>
+    <td class="tg-0pky">5000.00</td>
+    <td class="tg-0pky">31973.74</td>
+    <td class="tg-0pky">599.28</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">OliveOil</td>
+    <td class="tg-0pky">86.67</td>
+    <td class="tg-0pky">83.00</td>
+    <td class="tg-0pky">86.67</td>
+    <td class="tg-0pky">91.33±1.63</td>
+    <td class="tg-0pky">91.67±1.67</td>
+    <td class="tg-0pky">93.00±1.00</td>
+    <td class="tg-0pky">93.00±1.00</td>
+    <td class="tg-0pky">3194.50</td>
+    <td class="tg-0pky">3194.50</td>
+    <td class="tg-0pky">299.23</td>
+    <td class="tg-0pky">243.63</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">OSULeaf</td>
+    <td class="tg-0pky">82.73</td>
+    <td class="tg-0pky">97.85</td>
+    <td class="tg-0pky">93.39</td>
+    <td class="tg-0pky">94.01±0.42</td>
+    <td class="tg-0pky">93.88±0.90</td>
+    <td class="tg-0pky">94.17±0.91</td>
+    <td class="tg-0pky">93.68±0.92</td>
+    <td class="tg-0pky">2544.80</td>
+    <td class="tg-0pky">2544.80</td>
+    <td class="tg-0pky">1003.20</td>
+    <td class="tg-0pky">253.27</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">PhaOutCor</td>
+    <td class="tg-0pky">82.35</td>
+    <td class="tg-0pky">83.90</td>
+    <td class="tg-0pky">85.43</td>
+    <td class="tg-0pky">82.96±0.78</td>
+    <td class="tg-0pky">82.56±0.74</td>
+    <td class="tg-0pky">82.10±0.45</td>
+    <td class="tg-0pky">82.73±0.79</td>
+    <td class="tg-0pky">3258.50</td>
+    <td class="tg-0pky">3258.50</td>
+    <td class="tg-0pky">7441.26</td>
+    <td class="tg-0pky">308.97</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Phoneme</td>
+    <td class="tg-0pky">32.01</td>
+    <td class="tg-0pky">33.43</td>
+    <td class="tg-0pky">33.54</td>
+    <td class="tg-0pky">28.05±0.20</td>
+    <td class="tg-0pky">29.41±0.37</td>
+    <td class="tg-0pky">24.69±0.41</td>
+    <td class="tg-0pky">28.33±0.42</td>
+    <td class="tg-0pky">4732.60</td>
+    <td class="tg-0pky">4732.60</td>
+    <td class="tg-0pky">2607.88</td>
+    <td class="tg-0pky">389.57</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Plane</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">7082.80</td>
+    <td class="tg-0pky">5582.80</td>
+    <td class="tg-0pky">577.74</td>
+    <td class="tg-0pky">251.66</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ProPhaOutAG</td>
+    <td class="tg-0pky">84.63</td>
+    <td class="tg-0pky">85.32</td>
+    <td class="tg-0pky">85.37</td>
+    <td class="tg-0pky">85.51±0.22</td>
+    <td class="tg-0pky">85.66±0.62</td>
+    <td class="tg-0pky">85.80±0.67</td>
+    <td class="tg-0pky">85.27±0.43</td>
+    <td class="tg-0pky">1705.40</td>
+    <td class="tg-0pky">1705.40</td>
+    <td class="tg-0pky">1752.40</td>
+    <td class="tg-0pky">243.38</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ProPhaOutCor</td>
+    <td class="tg-0pky">87.32</td>
+    <td class="tg-0pky">92.13</td>
+    <td class="tg-0pky">93.13</td>
+    <td class="tg-0pky">90.24±0.60</td>
+    <td class="tg-0pky">89.14±0.74</td>
+    <td class="tg-0pky">89.73±0.42</td>
+    <td class="tg-0pky">90.65±1.10</td>
+    <td class="tg-0pky">3019.40</td>
+    <td class="tg-0pky">3019.40</td>
+    <td class="tg-0pky">2312.24</td>
+    <td class="tg-0pky">248.79</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ProPhaTW</td>
+    <td class="tg-0pky">77.90</td>
+    <td class="tg-0pky">78.05</td>
+    <td class="tg-0pky">77.56</td>
+    <td class="tg-0pky">81.17±0.66</td>
+    <td class="tg-0pky">81.07±0.72</td>
+    <td class="tg-0pky">80.49±0.79</td>
+    <td class="tg-0pky">79.07±1.03</td>
+    <td class="tg-0pky">4931.30</td>
+    <td class="tg-0pky">3431.30</td>
+    <td class="tg-0pky">1998.84</td>
+    <td class="tg-0pky">254.29</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">RefDev</td>
+    <td class="tg-0pky">53.23</td>
+    <td class="tg-0pky">52.53</td>
+    <td class="tg-0pky">50.93</td>
+    <td class="tg-0pky">53.49±0.96</td>
+    <td class="tg-0pky">53.20±0.87</td>
+    <td class="tg-0pky">54.08±0.73</td>
+    <td class="tg-0pky">53.41±1.23</td>
+    <td class="tg-0pky">3720.50</td>
+    <td class="tg-0pky">3720.50</td>
+    <td class="tg-0pky">1635.38</td>
+    <td class="tg-0pky">338.01</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ScreenType</td>
+    <td class="tg-0pky">45.52</td>
+    <td class="tg-0pky">62.16</td>
+    <td class="tg-0pky">57.60</td>
+    <td class="tg-0pky">48.56±1.15</td>
+    <td class="tg-0pky">49.20±2.09</td>
+    <td class="tg-0pky">46.99±1.54</td>
+    <td class="tg-0pky">47.92±0.97</td>
+    <td class="tg-0pky">3635.10</td>
+    <td class="tg-0pky">3635.10</td>
+    <td class="tg-0pky">1639.23</td>
+    <td class="tg-0pky">345.80</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ShapeletSim</td>
+    <td class="tg-0pky">77.61</td>
+    <td class="tg-0pky">77.94</td>
+    <td class="tg-0pky">98.89</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">99.44±0.86</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">2084.20</td>
+    <td class="tg-0pky">2084.20</td>
+    <td class="tg-0pky">159.30</td>
+    <td class="tg-0pky">229.72</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ShapesAll</td>
+    <td class="tg-0pky">88.58</td>
+    <td class="tg-0pky">92.13</td>
+    <td class="tg-0pky">92.50</td>
+    <td class="tg-0pky">90.72±0.22</td>
+    <td class="tg-0pky">90.72±0.22</td>
+    <td class="tg-0pky">90.18±0.40</td>
+    <td class="tg-0pky">90.42±0.30</td>
+    <td class="tg-0pky">10000.00</td>
+    <td class="tg-0pky">5000.00</td>
+    <td class="tg-0pky">10350.97</td>
+    <td class="tg-0pky">446.24</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">SmaKitApp</td>
+    <td class="tg-0pky">74.43</td>
+    <td class="tg-0pky">78.61</td>
+    <td class="tg-0pky">77.87</td>
+    <td class="tg-0pky">81.60±0.46</td>
+    <td class="tg-0pky">80.96±1.03</td>
+    <td class="tg-0pky">82.27±0.95</td>
+    <td class="tg-0pky">80.40±0.96</td>
+    <td class="tg-0pky">3184.10</td>
+    <td class="tg-0pky">3184.10</td>
+    <td class="tg-0pky">1638.70</td>
+    <td class="tg-0pky">348.32</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">SonAIBORobS1</td>
+    <td class="tg-0pky">84.58</td>
+    <td class="tg-0pky">95.81</td>
+    <td class="tg-0pky">88.35</td>
+    <td class="tg-0pky">92.26±0.20</td>
+    <td class="tg-0pky">92.23±0.39</td>
+    <td class="tg-0pky">94.26±0.58</td>
+    <td class="tg-0pky">93.16±0.32</td>
+    <td class="tg-0pky">1821.50</td>
+    <td class="tg-0pky">1821.50</td>
+    <td class="tg-0pky">156.69</td>
+    <td class="tg-0pky">236.41</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">SonAIBORobS2</td>
+    <td class="tg-0pky">89.63</td>
+    <td class="tg-0pky">97.78</td>
+    <td class="tg-0pky">95.28</td>
+    <td class="tg-0pky">91.22±0.27</td>
+    <td class="tg-0pky">91.22±0.52</td>
+    <td class="tg-0pky">92.13±0.36</td>
+    <td class="tg-0pky">92.24±0.55</td>
+    <td class="tg-0pky">3025.80</td>
+    <td class="tg-0pky">3025.80</td>
+    <td class="tg-0pky">181.42</td>
+    <td class="tg-0pky">241.38</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">StarLightC</td>
+    <td class="tg-0pky">98.13</td>
+    <td class="tg-0pky">97.18</td>
+    <td class="tg-0pky">97.92</td>
+    <td class="tg-0pky">98.06±0.05</td>
+    <td class="tg-0pky">98.06±0.04</td>
+    <td class="tg-0pky">98.01±0.13</td>
+    <td class="tg-0pky">98.00±0.13</td>
+    <td class="tg-0pky">4035.80</td>
+    <td class="tg-0pky">2535.80</td>
+    <td class="tg-0pky">4544.64</td>
+    <td class="tg-0pky">409.38</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Strawberry</td>
+    <td class="tg-0pky">96.84</td>
+    <td class="tg-0pky">98.05</td>
+    <td class="tg-0pky">98.38</td>
+    <td class="tg-0pky">98.14±0.08</td>
+    <td class="tg-0pky">98.03±0.34</td>
+    <td class="tg-0pky">97.62±0.48</td>
+    <td class="tg-0pky">98.30±0.27</td>
+    <td class="tg-0pky">3239.80</td>
+    <td class="tg-0pky">3239.80</td>
+    <td class="tg-0pky">2399.56</td>
+    <td class="tg-0pky">260.15</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">SwedishLeaf</td>
+    <td class="tg-0pky">94.66</td>
+    <td class="tg-0pky">95.63</td>
+    <td class="tg-0pky">97.12</td>
+    <td class="tg-0pky">96.56±0.29</td>
+    <td class="tg-0pky">96.32±0.35</td>
+    <td class="tg-0pky">96.45±0.34</td>
+    <td class="tg-0pky">96.50±0.27</td>
+    <td class="tg-0pky">8106.60</td>
+    <td class="tg-0pky">7106.60</td>
+    <td class="tg-0pky">3604.54</td>
+    <td class="tg-0pky">300.89</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Symbols</td>
+    <td class="tg-0pky">96.16</td>
+    <td class="tg-0pky">90.64</td>
+    <td class="tg-0pky">98.19</td>
+    <td class="tg-0pky">97.43±0.05</td>
+    <td class="tg-0pky">97.43±0.05</td>
+    <td class="tg-0pky">97.84±0.16</td>
+    <td class="tg-0pky">97.46±0.06</td>
+    <td class="tg-0pky">10000.00</td>
+    <td class="tg-0pky">5000.00</td>
+    <td class="tg-0pky">296.87</td>
+    <td class="tg-0pky">162.06</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">SynCon</td>
+    <td class="tg-0pky">99.53</td>
+    <td class="tg-0pky">99.83</td>
+    <td class="tg-0pky">99.67</td>
+    <td class="tg-0pky">99.97±0.10</td>
+    <td class="tg-0pky">99.73±0.29</td>
+    <td class="tg-0pky">99.03±0.10</td>
+    <td class="tg-0pky">99.83±0.22</td>
+    <td class="tg-0pky">5810.70</td>
+    <td class="tg-0pky">5810.70</td>
+    <td class="tg-0pky">1495.16</td>
+    <td class="tg-0pky">264.37</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ToeSeg1</td>
+    <td class="tg-0pky">92.46</td>
+    <td class="tg-0pky">96.27</td>
+    <td class="tg-0pky">96.93</td>
+    <td class="tg-0pky">96.80±0.34</td>
+    <td class="tg-0pky">96.62±0.34</td>
+    <td class="tg-0pky">95.26±1.25</td>
+    <td class="tg-0pky">95.88±0.35</td>
+    <td class="tg-0pky">1071.80</td>
+    <td class="tg-0pky">1071.80</td>
+    <td class="tg-0pky">267.47</td>
+    <td class="tg-0pky">244.17</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ToeSeg2</td>
+    <td class="tg-0pky">86.23</td>
+    <td class="tg-0pky">90.62</td>
+    <td class="tg-0pky">93.85</td>
+    <td class="tg-0pky">92.08±0.35</td>
+    <td class="tg-0pky">92.54±1.24</td>
+    <td class="tg-0pky">93.77±1.16</td>
+    <td class="tg-0pky">92.62±0.92</td>
+    <td class="tg-0pky">1091.60</td>
+    <td class="tg-0pky">1091.60</td>
+    <td class="tg-0pky">258.58</td>
+    <td class="tg-0pky">243.47</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Trace</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">1826.30</td>
+    <td class="tg-0pky">1826.30</td>
+    <td class="tg-0pky">866.61</td>
+    <td class="tg-0pky">237.49</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">TwoLeadECG</td>
+    <td class="tg-0pky">98.86</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">99.56</td>
+    <td class="tg-0pky">99.91±0.00</td>
+    <td class="tg-0pky">99.91±0.00</td>
+    <td class="tg-0pky">99.91±0.00</td>
+    <td class="tg-0pky">99.91±0.00</td>
+    <td class="tg-0pky">1840.70</td>
+    <td class="tg-0pky">1840.70</td>
+    <td class="tg-0pky">165.23</td>
+    <td class="tg-0pky">297.16</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">TwoPatterns</td>
+    <td class="tg-0pky">99.96</td>
+    <td class="tg-0pky">99.99</td>
+    <td class="tg-0pky">100.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">100.00±0.00</td>
+    <td class="tg-0pky">1474.20</td>
+    <td class="tg-0pky">1474.20</td>
+    <td class="tg-0pky">4908.68</td>
+    <td class="tg-0pky">279.18</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">UWavGesLibA</td>
+    <td class="tg-0pky">97.23</td>
+    <td class="tg-0pky">85.95</td>
+    <td class="tg-0pky">95.45</td>
+    <td class="tg-0pky">97.57±0.08</td>
+    <td class="tg-0pky">97.36±0.29</td>
+    <td class="tg-0pky">97.50±0.17</td>
+    <td class="tg-0pky">97.56±0.15</td>
+    <td class="tg-0pky">3914.80</td>
+    <td class="tg-0pky">3914.80</td>
+    <td class="tg-0pky">5160.15</td>
+    <td class="tg-0pky">362.54</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">UWavGesLibX</td>
+    <td class="tg-0pky">82.86</td>
+    <td class="tg-0pky">78.05</td>
+    <td class="tg-0pky">82.47</td>
+    <td class="tg-0pky">85.50±0.21</td>
+    <td class="tg-0pky">85.28±0.47</td>
+    <td class="tg-0pky">85.14±0.42</td>
+    <td class="tg-0pky">85.26±0.28</td>
+    <td class="tg-0pky">6413.70</td>
+    <td class="tg-0pky">3413.70</td>
+    <td class="tg-0pky">5167.12</td>
+    <td class="tg-0pky">361.90</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">UWavGesLibY</td>
+    <td class="tg-0pky">76.15</td>
+    <td class="tg-0pky">67.01</td>
+    <td class="tg-0pky">76.88</td>
+    <td class="tg-0pky">77.32±0.23</td>
+    <td class="tg-0pky">76.99±0.65</td>
+    <td class="tg-0pky">76.62±0.51</td>
+    <td class="tg-0pky">77.26±0.48</td>
+    <td class="tg-0pky">4142.30</td>
+    <td class="tg-0pky">2642.30</td>
+    <td class="tg-0pky">5208.30</td>
+    <td class="tg-0pky">362.11</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">UWavGesLibZ</td>
+    <td class="tg-0pky">76.40</td>
+    <td class="tg-0pky">75.01</td>
+    <td class="tg-0pky">76.97</td>
+    <td class="tg-0pky">79.13±0.20</td>
+    <td class="tg-0pky">78.67±0.45</td>
+    <td class="tg-0pky">79.15±0.27</td>
+    <td class="tg-0pky">78.96±0.47</td>
+    <td class="tg-0pky">2373.20</td>
+    <td class="tg-0pky">1873.20</td>
+    <td class="tg-0pky">5176.96</td>
+    <td class="tg-0pky">361.32</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wafer</td>
+    <td class="tg-0pky">99.55</td>
+    <td class="tg-0pky">99.86</td>
+    <td class="tg-0pky">99.87</td>
+    <td class="tg-0pky">99.83±0.01</td>
+    <td class="tg-0pky">99.78±0.06</td>
+    <td class="tg-0pky">99.86±0.04</td>
+    <td class="tg-0pky">99.83±0.06</td>
+    <td class="tg-0pky">1636.90</td>
+    <td class="tg-0pky">1636.90</td>
+    <td class="tg-0pky">4069.17</td>
+    <td class="tg-0pky">298.65</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wine</td>
+    <td class="tg-0pky">56.85</td>
+    <td class="tg-0pky">74.44</td>
+    <td class="tg-0pky">66.67</td>
+    <td class="tg-0pky">80.93±2.99</td>
+    <td class="tg-0pky">80.37±3.72</td>
+    <td class="tg-0pky">83.15±5.46</td>
+    <td class="tg-0pky">82.96±4.96</td>
+    <td class="tg-0pky">2496.60</td>
+    <td class="tg-0pky">2496.60</td>
+    <td class="tg-0pky">364.49</td>
+    <td class="tg-0pky">240.98</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">WordSynonyms</td>
+    <td class="tg-0pky">77.87</td>
+    <td class="tg-0pky">62.24</td>
+    <td class="tg-0pky">75.55</td>
+    <td class="tg-0pky">75.33±0.27</td>
+    <td class="tg-0pky">75.34±0.27</td>
+    <td class="tg-0pky">75.47±0.73</td>
+    <td class="tg-0pky">76.00±0.45</td>
+    <td class="tg-0pky">9825.40</td>
+    <td class="tg-0pky">5325.40</td>
+    <td class="tg-0pky">2422.28</td>
+    <td class="tg-0pky">317.08</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Worms</td>
+    <td class="tg-0pky">71.82</td>
+    <td class="tg-0pky">79.09</td>
+    <td class="tg-0pky">80.52</td>
+    <td class="tg-0pky">73.25±1.04</td>
+    <td class="tg-0pky">73.25±1.45</td>
+    <td class="tg-0pky">73.12±1.65</td>
+    <td class="tg-0pky">72.21±1.32</td>
+    <td class="tg-0pky">2563.70</td>
+    <td class="tg-0pky">2563.70</td>
+    <td class="tg-0pky">877.64</td>
+    <td class="tg-0pky">328.10</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">WormsTwoCla</td>
+    <td class="tg-0pky">78.44</td>
+    <td class="tg-0pky">74.68</td>
+    <td class="tg-0pky">79.22</td>
+    <td class="tg-0pky">78.96±1.82</td>
+    <td class="tg-0pky">79.35±1.69</td>
+    <td class="tg-0pky">80.91±1.65</td>
+    <td class="tg-0pky">77.79±1.23</td>
+    <td class="tg-0pky">3403.80</td>
+    <td class="tg-0pky">3403.80</td>
+    <td class="tg-0pky">1026.81</td>
+    <td class="tg-0pky">324.07</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Yoga</td>
+    <td class="tg-0pky">87.86</td>
+    <td class="tg-0pky">87.02</td>
+    <td class="tg-0pky">90.57</td>
+    <td class="tg-0pky">91.16±0.36</td>
+    <td class="tg-0pky">90.43±0.43</td>
+    <td class="tg-0pky">91.38±0.43</td>
+    <td class="tg-0pky">91.48±0.52</td>
+    <td class="tg-0pky">2140.20</td>
+    <td class="tg-0pky">2140.20</td>
+    <td class="tg-0pky">1680.05</td>
+    <td class="tg-0pky">237.54</td>
+  </tr>
+</tbody>
+</table>
 
 
 ## Pruning ROCKET-PPV-MAX on 43 `extra' datasets
