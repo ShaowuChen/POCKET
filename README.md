@@ -1,5 +1,5 @@
 # P-ROCKET: Pruning Random Convolution Kernels for Time Series Classification
-![Prune Kenels via Feature Seletion](https://github.com/ShaowuChen/P-ROCKET/assets/78587515/8aa0e762-4394-46ec-a6d2-480b0fefcc0f)
+![image](https://github.com/ShaowuChen/POCKET/assets/78587515/96a5deb1-672e-491d-8479-fe4df13323d0)
 
 
 Feel free to contact me (shaowu-chen@foxmail.com) if you have questions about the paper. 
