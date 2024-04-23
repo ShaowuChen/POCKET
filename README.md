@@ -23,7 +23,7 @@ Feel free to contact me (shaowu-chen@foxmail.com) if you have questions about th
 - Sklearn (0.24.2)
 
 # Code Description 
-**Note that we have rename our algorithm in the manuscript; ```P-ROCKET``` in the code corresponds to  ```POCKET```**
+**Note that we have rename our algorithm in the manuscript; ```P-ROCKET``` or ```PROCKET``` in the code corresponds to  ```POCKET```**
 ```
   ├── ROCKET-PPV-MAX                  : contains code for ROCKET-PPV-MAX
       ├── reproduce_experiments_ucr.py: Main code 
