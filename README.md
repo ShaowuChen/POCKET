@@ -1289,4 +1289,3 @@ python reproduce_experiments_ucr.py -o save_path -n 10 -e 50
 
 
 ## Pruning ROCKET-PPV-MAX on 43 `extra' datasets
-![image](https://github.com/ShaowuChen/POCKET/assets/78587515/32c707ee-330a-45ab-8834-a78d1917a408)
