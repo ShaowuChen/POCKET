@@ -53,7 +53,7 @@ python reproduce_experiments_ucr.py -o save_path -n 10 -e 50
 # Results
 
 ## Pruning ROCKET-PPV-MAX on 85 `bake off' datasets
-![](./results.svg)
+![](./results.html)
 
 ![image](https://github.com/ShaowuChen/POCKET/assets/78587515/c5625d56-e7ce-4fcb-977e-095f82f6c4f6)
 ![image](https://github.com/ShaowuChen/POCKET/assets/78587515/e4c9dc04-92b4-4ecc-8d68-7897ea293bf8)
