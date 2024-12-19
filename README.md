@@ -58,7 +58,7 @@
 
 # Demo/Training:
 - download and save the dataset archive on the root path
-- add expected name of datasets in `demo.txt` (in which 
+- (Delete unwanted  name of datasets in `demo.txt` for a quick try) 
 - run the following command
 
 ```bash
