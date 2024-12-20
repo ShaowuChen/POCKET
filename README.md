@@ -1,6 +1,6 @@
 # POCKET: Pruning Random Convolution Kernels for Time Series Classification
 (previous name: `P-ROCKET: Pruning Random Convolution Kernels for Time Series Classification`)
-- Welcome to visit our Repo! Don't hesitate to contact me (shaowu-chen@foxmail.com) if you have questions about the paper. 
+- Welcome to our Repo! Don't hesitate to contact me (shaowu-chen@foxmail.com) if you have questions about the paper. 
 - Download the paper here [arXiv](https://arxiv.org/abs/2309.08499)
 - If the code help, please cite our work:
 ```
@@ -58,7 +58,7 @@
 
 # Demo/Training:
 - download and save the dataset archive on the root path
-- (Delete unwanted  name of datasets in `demo.txt` for a quick try) 
+- (Delete unwanted names of datasets in `demo.txt` for a quick try) 
 - run the following command
 
 ```bash
